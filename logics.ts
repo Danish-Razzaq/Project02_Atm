@@ -123,14 +123,14 @@ const atminterface = async () => {
                 const { Money, accout, pincode } = TsferCash
                 if (pincode === atm.pin_codes[atm.pin_codes.lastIndexOf(password)]) {
 
-                    let trasec = chalkAnimation.rainbow(chalk.bold("Transaction Successful"));
+                    let trasec = chalkAnimation.rainbow("Transaction Successful");
                     await sleep();
                     trasec.stop();
 
                 }
                 else {
 
-                    let trasecFail = chalkAnimation.neon(chalk.bold(`\t"Transection Failed" '\n'      Plz Enter Correct Password`))
+                    let trasecFail = chalkAnimation.neon(`\t"Transection Failed" '\n'\tPlz Enter Correct Password`)
                     await sleep();
                     trasecFail.stop()
                 }
@@ -192,7 +192,7 @@ const atminterface = async () => {
                 const { billmoney, pincode } = paybill
 
                 if (pincode === atm.pin_codes[atm.pin_codes.lastIndexOf(password)]) {
-                    let confirmpin = chalkAnimation.rainbow(chalk.bold(" Paid Successful"));
+                    let confirmpin = chalkAnimation.rainbow(" Paid Successful");
                     await sleep();
                     confirmpin.stop();
 
