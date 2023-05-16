@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "bin": {
-    "dani_atm": "bin/Atm.js"
-  },
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
